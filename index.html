@@ -40,7 +40,7 @@
 
             This is also the text that appears during a google search
         -->
-        <title>Template Home Page</title>
+        <title>Admin Dashboard</title>
 
         <!--
             link to external css stylesheet
@@ -61,7 +61,189 @@
     -->
     <body>
 
-        
+        <div id="master" class="grid">
+
+
+            <div id="sidebar">
+                <p><a href="home">Home</a></p>
+                <p><a href="profile">Profile</a></p>
+                <p><a href="messages">Messages</a></p>
+                <p><a href="history">History</a></p>
+                <p><a href="tasks">Tasks</a></p>
+                <p><a href="communities">Communities</a></p>
+                <p><a href="settings">Settings</a></p>
+                <p><a href="support">Support</a></p>
+                <p><a href="privacy">Privacy</a></p>
+            </div>
+
+
+            <div id="titlebar" class="grid">
+
+                <!-- row 1 -->
+                <div id="search-icon" class="icon"><img src="./icon-search.png"></div>
+                <div id="searchbar">Searchbar placeholder</div>
+                <div id="notification-icon" class="icon"><img src="./icon-notification.png"></div>
+                <div id="account" class="icon user"><img src="./icon-user01.png"></div>
+                <div id="username">Marc Ohlmann</div>
+
+                <!-- row 2 -->
+                <div id="greetings" class="grid">
+                    <div id="greetings-user-icon" class="icon user"><img src="./icon-user01.png"></div>
+                    <div id="greetings-message">Hi there,</div>
+                    <div id="greetings-user-name">Marc Ohlmann (@mohlmann)</div>
+                </div>
+                <div class="title-button-div"><button id="btnNew">New</div>
+                <div class="title-button-div"><button id="btnUpload">Upload</div>
+                <div class="title-button-div"><button id="btnShare">Share</div>
+
+            </div>
+
+
+            <div id="mainboard" class="grid">
+
+                <div id="projects-box" class="grid">
+                    <div id="projects-title">Your Projects</div>
+
+                    <div class="project">
+                        <div class="project-title">Super Cool Project</div>
+                        <div class="project-description">
+                            Eeepus ep lexon oll turkik dei loshurew ma Sed pellentesque pretium porta. 
+                            Nullam blandit a nisl vel pretium. Nam odio eros, auctor at eleifend a, commodo 
+                            non erat.
+                        </div>
+                        <div class="project-icon icon star"><img src="./icon-star.png"></div>
+                        <div class="project-icon icon watch"><img src="./icon-watch.png"></div>
+                        <div class="project-icon icon share"><img src="./icon-share.png"></div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-title">Less Cool Project</div>
+                        <div class="project-description">
+                            Maecenas dapibus elit eget metus consequat auctor. Etiam viverra nisl vitae 
+                            cursus porta. Suspendisse at interdum nisi.
+                        </div>
+                        <div class="project-icon icon star"><img src="./icon-star.png"></div>
+                        <div class="project-icon icon watch"><img src="./icon-watch.png"></div>
+                        <div class="project-icon icon share"><img src="./icon-share.png"></div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-title">Impossible App</div>
+                        <div class="project-description">
+                            Maecenas et erat vel velit vulputate convallis. Nunc velit erat, facilisis 
+                            sit amet facilisis ut, malesuada et orci. Sed sed lectus vitae ante blandit 
+                            volutpat vitae ac enim.
+                        </div>
+                        <div class="project-icon icon star"><img src="./icon-star.png"></div>
+                        <div class="project-icon icon watch"><img src="./icon-watch.png"></div>
+                        <div class="project-icon icon share"><img src="./icon-share.png"></div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-title">Easy Peasy App</div>                        
+                        <div class="project-description">
+                            Phasellus elementum velit at nibh viverra, eu posuere enim efficitur. 
+                            Aliquam erat volutpat. Ut eleifend nisl id sapien pellentesque tincidunt.
+                        </div>
+                        <div class="project-icon icon star"><img src="./icon-star.png"></div>
+                        <div class="project-icon icon watch"><img src="./icon-watch.png"></div>
+                        <div class="project-icon icon share"><img src="./icon-share.png"></div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-title">Ad Knocker</div>
+                        <div class="project-description">
+                            Nullam blandit ac lorem nec feugiat. Fusce vel nunc eros. 
+                            Fusce in consequat tellus. Etiam fermentum, lectus dapibus 
+                            feugiat commodo, turpis ipsum tincidunt metus, et ullamcorper 
+                            ligula erat ut nunc.
+                        </div>
+                        <div class="project-icon icon star"><img src="./icon-star.png"></div>
+                        <div class="project-icon icon watch"><img src="./icon-watch.png"></div>
+                        <div class="project-icon icon share"><img src="./icon-share.png"></div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-title">Money Spender</div>
+                        <div class="project-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Duis sed pharetra massa. Nam sapien lectus, auctor eu 
+                            mauris et, dignissim mollis eros.
+                        </div>
+                        <div class="project-icon icon star"><img src="./icon-star.png"></div>
+                        <div class="project-icon icon watch"><img src="./icon-watch.png"></div>
+                        <div class="project-icon icon share"><img src="./icon-share.png"></div>
+                    </div>
+
+                </div>
+
+                
+                <div id="announcements-box">
+                    <div id="announcements-title">Announcements</div>
+
+                    <div class="announcement">
+                        <div class="announcement-title">Site Maintenance</div>
+                        <div class="announcement-description">
+                            In sed facilisis magna. Maecenas varius non magna id ornare. 
+                            Mauris non odio placerat nisl posuere consectetur sed a mi. 
+                        </div>
+                    </div>
+
+                    <div class="announcement">
+                        <div class="announcement-title">Community Day</div>
+                        <div class="announcement-description">
+                            Quisque commodo turpis quis orci suscipit pellentesque. 
+                            Duis mollis justo vitae magna commodo tempus. Aenean non nulla
+                            in magna luctus convallis eu eu libero.
+                        </div>
+                    </div>
+
+                    <div class="announcement">
+                        <div class="announcement-title">Updated Policy</div>
+                        <div class="announcement-description">
+                            Vestibulum imperdiet pellentesque magna, vitae molestie arcu 
+                            accumsan mollis. Vestibulum id ex lacus. Proin commodo urna a 
+                            nisi ornare, sit amet tincidunt quam tempor. 
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div id="trending-box">
+                    <div id="trending-title">Trending</div>
+
+                    <div class="trend">
+                        <div class="trend-icon icon user"><img src="./icon-user02.png"></div>
+                        <div class="trend-user">@tegan</div>
+                        <div class="trend-name">World Peace Builder</div>
+                    </div>
+
+                    <div class="trend">
+                        <div class="trend-icon icon user"><img src="./icon-user01.png"></div>
+                        <div class="trend-user">@mohlmann</div>
+                        <div class="trend-name">Super Cool Project</div>
+                    </div>
+
+                    <div class="trend">
+                        <div class="trend-icon icon user"><img src="./icon-user03.png"></div>
+                        <div class="trend-user">@kendall</div>
+                        <div class="trend-name">Life Changing App</div>
+                    </div>
+
+                    <div class="trend">
+                        <div class="trend-icon icon user"><img src="./icon-user04.png"></div>
+                        <div class="trend-user">@alex</div>
+                        <div class="trend-name">No Traffic Maker</div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
 
     </body>
 
