@@ -11,3 +11,154 @@
     margin: 0px;
     padding: 0px;
 }
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#master-div{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+
+    /* 7 rows x 8 columns  */
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+
+/* titlebar */
+
+#titlebar{
+    grid-area: 1 / 2 / 2 / 9;
+    
+    display: grid;
+
+    /* 2 rows x 2 columns  */
+    grid-template: 10vh 10vh / 45vw 30vw;
+
+    box-shadow: 2px 3px 3px rgb(82, 82, 82);
+    padding: 12px;
+}
+
+#title-search-div{
+    grid-area: 1 / 1 / 2 / 2;
+
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 24px;
+}
+
+#title-icon-div{
+    grid-area: 1 / 2 / 2 / 2;
+
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+#title-greetings-box{
+    grid-area: 2 / 1 / 2 / 1;
+    
+    display: flex;
+    flex-flow: row wrap;
+    gap: 12px;
+}
+
+#title-buttons-box{
+    grid-area: 2 / 2 / 2 / 2;
+
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+
+/* sidebar */
+
+#sidebar{
+    background-color: lightblue;
+    margin: 24px;
+    grid-area: 1 / 1 / 8 / 2;
+    
+    display: grid;
+
+    /* 12 rows x 1 columns  */
+    grid-template: 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem / 1fr;
+}
+
+#sidebar-dashboard-div{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+#sidebar-primary-div{
+    grid-area: 3 / 1 / 8 / 2;
+}
+
+#sidebar-secondary-div{
+    grid-area: 10 / 1 / 13 / 2;
+}
+
+
+/* mainboard */
+
+#mainboard{
+    grid-area: 2 / 2 / 8 / 9;
+
+    display: grid;
+
+    /* 6 rows x 6 columns */
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#projects-board{
+    grid-area: 1 / 1 / 7 / 4;
+    margin: 12px;
+}
+
+#announcements-board{
+    grid-area: 1 / 5 / 3 / 7;
+    margin: 12px;
+}
+
+#announcement-container{
+    margin: 6px;
+}
+
+.announcement-description{
+    margin: 12px;
+}
+
+#trending-board{
+    grid-area: 4 / 5 / 7 / 7;
+    margin: 12px;
+}
+
+#project-container{
+    margin: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project-description{
+    margin: 6px;
+}
+
+.project-icons{
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    gap: 12px;
+}
+
+#trend-container{
+    margin: 6px;
+}
+
+.trend{
+    margin: 6px;
+    width: 175px;
+}
