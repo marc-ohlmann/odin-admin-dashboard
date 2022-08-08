@@ -37,7 +37,7 @@ a{
     display: grid;
 
     /* 2 rows x 2 columns  */
-    grid-template: 10vh 10vh / 45vw 30vw;
+    grid-template: 1fr 1fr / 3fr 2fr;
 
     box-shadow: 2px 3px 3px rgb(82, 82, 82);
     padding: 12px;
@@ -88,7 +88,7 @@ a{
     display: grid;
 
     /* 12 rows x 1 columns  */
-    grid-template: 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem / 1fr;
+    grid-template: 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem / 10rem;
 }
 
 #sidebar-dashboard-div{
@@ -121,7 +121,7 @@ a{
 }
 
 #announcements-board{
-    grid-area: 1 / 5 / 3 / 7;
+    grid-area: 1 / 5 / 4 / 7;
     margin: 12px;
 }
 
@@ -134,14 +134,15 @@ a{
 }
 
 #trending-board{
-    grid-area: 4 / 5 / 7 / 7;
+    grid-area: 5 / 5 / 7 / 7;
     margin: 12px;
 }
 
 #project-container{
     margin: 32px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
 }
 
 .project-description{
